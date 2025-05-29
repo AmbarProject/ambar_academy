@@ -46,13 +46,16 @@
         left: -100%;
     }
 }
-.imageBackfround{
+.imageBackground{
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     z-index: -1;
     width: 40%;
+}
+.imgBack{
+    width: auto;
 }
 .heroSectionTitle{
     font-size: 5rem;
@@ -116,6 +119,9 @@
     align-items: center;
     font-family: "Audiowide", sans-serif;
     gap: 0.5rem;
+}
+.madeImg{
+    width: auto;
 }
 /*
 .circle{
