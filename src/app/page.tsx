@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Home - Ambar",
     description: "Essa é a página inicial da AmbarCode",
-    images: ["https://postimg.cc/pyzYby4Z"],
+    images: ["https://i.postimg.cc/nVwdmD16/Ambar-Code-Open-Graph.jpg"],
   },
 };
 
