@@ -1,0 +1,7 @@
+.header, .navigation{
+    display: flex;
+}
+.home{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}

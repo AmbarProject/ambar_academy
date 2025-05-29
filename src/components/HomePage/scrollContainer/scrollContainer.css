@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.scrollContainer__title{
+    font-family: "Audiowide", sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 3rem;
+    padding-left: 3rem;
+}
+.scrollContainer__title strong{
+    color: #CE7B1D;
+}
+.scrollContainer{
+    max-height: 70vh;
+    margin: 3rem;
+    width: 90%;
+    direction: rtl; 
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+}
+.scrollContainer::before{
+    content: "";
+    display: flex;
+    position: absolute;
+    top: 10;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(to bottom, #000, transparent);
+    z-index: 4; 
+}
+.scrollContainer__content{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+}
+
+.scrollContainer__content__img{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    border: 1px solid #CE7B1D;
+    padding: 20px;
+    flex-direction: column;
+    background: linear-gradient(180deg, #C4751B, #592F00, #0000);
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    border-radius: 15px;
+    flex: 1;
+}   
+.imageContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.imageAmbarcode {
+    background-image: url("/AmbarAcademyDark.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imageAmbarc {
+    background-image: url("/bandeira.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.imageAcademy {
+    background-image: url("/logaName.svg");
+    background-size: cover;
+    background-position: center;
+}
+.badge{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-family: "Audiowide", sans-serif;
+    border-radius: 10px 0px 10px 0px ;
+    width: min-content;
+    padding: 2px 5px;
+    background: linear-gradient(to right, #CE7B1D, #683E0F);
+}
+.scrollContent_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 3rem;
+    text-align: left;
+    justify-content: flex-start;
+    flex: 1;
+    gap: 1.5rem;
+
+    p{
+        width: 80%;
+    }
+}
+.scrollContent_text h1{
+    font-size: 2rem;
+    color: #FFFFFF;
+    font-family: "Audiowide", sans-serif;
+}
+.scrollContent_text strong{
+    color:#CE7B1D
+}
+.scrollContainer::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 5px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Cor do fundo da barra */
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: #CE7B1D; /* Cor do indicador da barra */
+  border-radius: 5px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb:hover {
+  background: #CE7B1D;
+}

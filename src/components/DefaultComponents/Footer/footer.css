@@ -1,0 +1,121 @@
+.footer{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0px 50px;
+    max-height: 75vh;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.footer__content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex: 2;
+    border-bottom: 2px solid #141414;
+}
+.footerSocialLinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.footerSocialLinks__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 5px 10px;
+    border: 2px solid #ffffff;
+    border-radius: 100px;
+    gap: 1rem;
+    font-size: 12px;
+    transition: all .5s ease-in-out;
+}
+
+.bullet{
+    width: 20px;
+    height: 20px;
+    background-color: #ffff;
+}
+.footerSocialLinks__link:nth-child(1){
+    background-color: #1F2130;
+    border-color: #2D3352;
+}
+.footerSocialLinks__link:nth-child(2){
+    background-color: #0A0A0A;
+    border-color: #0A0A0A;
+}
+.footerSocialLinks__link:nth-child(3){
+    background-color: #001B2A;
+    border-color: #0288D1;
+}
+.footerSocialLinks__link:nth-child(4){
+    background-color: #111327;
+    border-color: #5561C4;
+}
+
+.footerSocialLinks__link:hover{
+    background-color: #CE7B1D;
+    border-color: #CE7B1D;
+}
+.icon{
+    font-size: 1rem;
+}
+.footerButtons{
+    display: flex;
+    gap: 2rem;
+}
+.footerButtons__link{
+    padding: 10px 50px;
+    background-color: #CE7B1D;
+    border-radius: 10px;
+}
+.footerButtons__link:nth-child(2){
+    background-color: #0A0A0A;
+    border: 2px solid #242424;
+}
+.footerButtons__link__button{
+    cursor: pointer;
+}
+.footer__content__text{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+.footer__content__text::after{
+    content: "Ambar.Code";
+    font-size: 15rem;
+    line-height: 0.5;
+    font-weight: bolder;
+    color: #141414;
+    font-family: "Inter", sans-serif;
+}
+.copyright{
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    padding: 0px 5rem;
+    font-size: 0.8rem;
+}
+.copyrightAcept{
+    color: #ffff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.copyrightAcept:hover{
+    color: #CE7B1D;
+}

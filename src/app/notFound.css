@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.header, .navigation{
+/*Display stuff*/
+    display: none;
+}
+
+.ErrorContainer{
+/*Display stuff*/
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+/*Positioning stuff*/
+    z-index: -1;
+/*Box model stuff*/
+    width: 100%;
+    height: 100vh;
+}
+.video-background {
+/*Positioning stuff*/
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+/*Box model stuff*/
+  width: 100%;
+  height: 100vh;
+/*Miscellaneous*/
+  object-fit: cover;
+}
+
+
+.ErrorMessage{
+/*Positioning stuff*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 3;
+/*Typography stuff*/
+    font-family: "Audiowide", sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+/*Manipulations stuff*/
+    transform: translate(-50%, -50%);
+    animation: fadeIn 5s ease-in-out;
+}
+.ErrorCode h1{
+/*Positioning stuff*/
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 1;
+/*Box model stuff*/
+    background: linear-gradient(360deg, #131313, #000000);
+/*Typography stuff*/
+    font-size: 25rem;
+    font-weight: 900;
+    text-align: center;
+    color: #FFFFFF;
+/*Manipulations stuff*/
+    transform: translate(-50%, -50%);
+/*Miscellaneous*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1s ease-in-out;
+}
+.item1{
+/*Display stuff*/
+    display: flex;
+    flex: 1;
+/*Box model stuff*/
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+.ErrorContent{
+/*Display stuff*/
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+/*Positioning stuff*/
+    z-index: 2;
+/*Box model stuff*/
+    width: 100%;
+    height: 100%;
+/*Miscellaneous*/
+    backdrop-filter: blur(15px);
+    animation: fadeIn 1s ease-in-out;
+}
+.ErrorDescription{
+/*Typography stuff*/
+    font-size: 20px;
+    font-weight: bold;
+    color: #686868;
+    animation: fadeIn 3s ease-in-out;
+}
+.ErrorBtns{
+/*Display stuff*/
+    display: flex;
+/*Miscellaneous*/
+    gap: 1rem;
+}
+.ErrorBtn{
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    padding: 10px 50px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+/*Typography stuff*/
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+/*Miscellaneous*/
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.ErrorBtn:nth-child(1):hover{
+    background-color: #CE7B1D;
+    color: #FFFFFF;
+}
+.ErrorBtn:nth-child(2){
+/*Display stuff*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*Box model stuff*/
+    width: 50px;
+    height: 100%;
+    padding: 0;
+    border: 2px solid #242424;
+    background-color: #0A0A0A;
+}
+.icon{
+/*Typography stuff*/
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.CopyBtn{
+/*Manipulations stuff*/
+    transition: all 1.3s ease;
+}
+.CopyBtn:hover::after{
+/*Display stuff*/
+    content: "Copiar Código de Erro";
+    display: flex;
+/*Positioning stuff*/
+    position: absolute;
+    left: 57%;
+    top: 50%;
+/*Box model stuff*/
+    padding: 1px 10px;
+    border-radius: 5px 5px 5px 0px;
+    background-color: #242424;
+/*Typography stuff*/
+    color: white;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+    
+}
