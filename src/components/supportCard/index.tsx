@@ -1,9 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import "./supportCard.css";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 type SupportCardProps = {
-    icone: any;
+    icone: IconProp;
     title: string;
     text: string;
     link: string;
