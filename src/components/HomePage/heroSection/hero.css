@@ -30,13 +30,14 @@
     white-space: nowrap;
     font-weight: bold;
     user-select: none;
-    animation: moveText 10s linear infinite;
+    animation: moveText 30s linear infinite;
 }
 .backgroundText {
     position: absolute;
     font-size: 1rem;
     text-align: center;
     z-index: -10;
+    opacity: 0.3;
 }
 @keyframes moveText {
     0% {
@@ -75,6 +76,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
+    color: #ffffff;
 }
 .actionButtons{
     display: flex;

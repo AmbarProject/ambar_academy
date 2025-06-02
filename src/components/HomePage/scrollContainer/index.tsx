@@ -25,7 +25,7 @@ const FadeElement = ({ children }: { children: React.ReactNode }) => {
 
 export function ScrollContainer({id} : {id: string}) {
   return (
-    <div id={id}>
+    <div id={id} className="scrollBody">
       <div className="scrollContainer__title">
         <h1>
           EC0SSISTEMA <strong>AMBAR</strong>

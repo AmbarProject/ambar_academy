@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+.scrollBody{
+    background-color: #000;
+}
 .scrollContainer__title{
     font-family: "Audiowide", sans-serif;
     color: #ffffff;
@@ -13,6 +16,7 @@
 }
 .scrollContainer{
     max-height: 70vh;
+    background-color: #000;
     margin: 3rem;
     width: 90%;
     direction: rtl; 
@@ -83,6 +87,7 @@
     border-radius: 10px 0px 10px 0px ;
     width: min-content;
     padding: 2px 5px;
+    color: #ffffff;
     background: linear-gradient(to right, #CE7B1D, #683E0F);
 }
 .scrollContent_text{
@@ -93,6 +98,7 @@
     text-align: left;
     justify-content: flex-start;
     flex: 1;
+    color: #ffffff;
     gap: 1.5rem;
 
     p{
@@ -107,20 +113,27 @@
 .scrollContent_text strong{
     color:#CE7B1D
 }
+
+
+/* estilizando a barra de rolagem */
 .scrollContainer::-webkit-scrollbar {
   width: 5px;
-  border-radius: 5px;
 }
 
 .scrollContainer::-webkit-scrollbar-track {
-  background: #1a1a1a; /* Cor do fundo da barra */
+  background: #1a1a1a; 
 }
 
 .scrollContainer::-webkit-scrollbar-thumb {
-  background: #CE7B1D; /* Cor do indicador da barra */
+  background: #CE7B1D; 
   border-radius: 5px;
 }
 
 .scrollContainer::-webkit-scrollbar-thumb:hover {
-  background: #CE7B1D;
+  background: #E08A2E; 
+}
+
+.scrollContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #CE7B1D #1a1a1a;
 }

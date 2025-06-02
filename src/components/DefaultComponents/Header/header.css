@@ -110,6 +110,7 @@
         border-radius: 5px;
         transition: all 0.3s ease;
         cursor: pointer;
+        color: #ffffff;
     }
     .link_item:hover{
         background-color: #FFF;
@@ -125,6 +126,7 @@
     border-radius: 5px;
     flex: 1;
     display: flex;
+    color: #ffffff;
 }
 .header_search{
     display: flex;

@@ -35,6 +35,7 @@
     padding: 5px 10px;
     border: 2px solid #ffffff;
     border-radius: 100px;
+    color: #ffffff;
     gap: 1rem;
     font-size: 12px;
     transition: all .5s ease-in-out;
@@ -51,7 +52,7 @@
 }
 .footerSocialLinks__link:nth-child(2){
     background-color: #0A0A0A;
-    border-color: #0A0A0A;
+    border-color: #2a2a2a;
 }
 .footerSocialLinks__link:nth-child(3){
     background-color: #001B2A;
@@ -62,10 +63,19 @@
     border-color: #5561C4;
 }
 
-.footerSocialLinks__link:hover{
-    background-color: #CE7B1D;
-    border-color: #CE7B1D;
+.footerSocialLinks__link:nth-child(1):hover{
+    background-color: #2D3352;
 }
+.footerSocialLinks__link:nth-child(2):hover{
+    background-color: #2a2a2a;
+}
+.footerSocialLinks__link:nth-child(3):hover{
+    background-color: #0288D1;
+}
+.footerSocialLinks__link:nth-child(4):hover{
+    background-color: #5561C4;
+}
+
 .icon{
     font-size: 1rem;
 }
@@ -74,13 +84,23 @@
     gap: 2rem;
 }
 .footerButtons__link{
+    color: #ffffff;
     padding: 10px 50px;
     background-color: #CE7B1D;
     border-radius: 10px;
+    opacity: 0.8;
+    transition: all .3s ease-in-out;
+}
+.footerButtons__link:hover{
+    opacity: 1;
 }
 .footerButtons__link:nth-child(2){
     background-color: #0A0A0A;
     border: 2px solid #242424;
+}
+
+.footerButtons__link:nth-child(2):hover{
+    background-color: #242424;
 }
 .footerButtons__link__button{
     cursor: pointer;
@@ -110,6 +130,7 @@
     justify-content: space-between;
     padding: 0px 5rem;
     font-size: 0.8rem;
+    color: #ffffff;
 }
 .copyrightAcept{
     color: #ffff;
