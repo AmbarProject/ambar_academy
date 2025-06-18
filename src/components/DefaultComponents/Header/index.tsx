@@ -14,7 +14,7 @@ export function Header() {
 
       if (currentScrollY > lastScrollY) {
         setShowHeader(false);
-      } else {
+      } else { 
         setShowHeader(true); 
       }
 
