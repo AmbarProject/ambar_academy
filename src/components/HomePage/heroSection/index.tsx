@@ -3,9 +3,9 @@ import "./hero.css";
 import AnimatedText from "@/components/animatedTitle";
 import Image from "next/image";
 
-export function HeroSection({id}: {id: string}) {
+export function HeroSection() {
     return (
-        <div id={id} className="heroSection">
+        <div id="home" className="heroSection">
 
             <div className="heroSection__container">
 

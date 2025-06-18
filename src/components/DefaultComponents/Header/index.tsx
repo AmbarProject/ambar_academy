@@ -2,6 +2,7 @@
 import React from "react";
 import "./header.css";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export function Header() {
   const [showHeader, setShowHeader] = useState(true);
@@ -42,10 +43,10 @@ const scrollToSection = (id: string) => {
 
         <div className="header_main">
           <ul>
-            <li className="link_item"onClick={() => scrollToSection("home")}>Home</li>
-            <li className="link_item" onClick={() => scrollToSection("pitch")}>Pitch</li>
-            <li className="link_item" onClick={() => scrollToSection("ecossistema")}>Ecossistema</li>
-            <li className="link_item" onClick={() => scrollToSection("suporte")}>Suporte</li>
+            <Link href={"#home"} className="link_item"onClick={() => scrollToSection("home")}>Home</Link>
+            <Link href={"#pitch"} className="link_item" onClick={() => scrollToSection("pitch")}>Pitch</Link>
+            <Link href={"#ecossistema"} className="link_item" onClick={() => scrollToSection("ecossistema")}>Ecossistema</Link>
+            <Link href={"#suporte"} className="link_item" onClick={() => scrollToSection("suporte")}>Suporte</Link>
           </ul>
         </div>
         

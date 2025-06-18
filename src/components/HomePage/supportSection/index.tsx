@@ -6,9 +6,9 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import SupportCard from "@/components/supportCard";
 
-export function SupportSection({id} : {id: string}) {
+export function SupportSection() {
   return (
-    <div id={id} className="supportContainer">
+    <div id="suporte" className="supportContainer">
       <div className="titleSection">
         <h1>Nosso Suporte</h1>
         <p>
