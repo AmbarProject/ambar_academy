@@ -125,6 +125,15 @@
 .madeImg{
     width: auto;
 }
+
+@media (max-width: 500px) {
+    .heroSectionTitle{
+        font-size: 3rem;
+    }
+    .imageBackground{
+        width: 90%;
+    }
+}
 /*
 .circle{
     position: absolute;
