@@ -45,8 +45,8 @@ export function ScrollContainer({id} : {id: string}) {
                     AMBAR.<strong>C0DE</strong>
                 </h1>
                 <p>
-                    Uma plataforma que democratiza o ensino de programação, com aulas e materiais 
-                    acessíveis. Aprenda a programar com foco em eficiência, inclusão e impacto social.
+                    Ambar.Code é uma linguagem de programação criada para ser eficiente, acessível e ecologicamente consciente. 
+                    Simples de aprender, poderosa de executar – leve a programação aonde nunca chegou.
                 </p>
                 </div>
             </div>
@@ -63,8 +63,8 @@ export function ScrollContainer({id} : {id: string}) {
                     AMBAR.<strong>ACADEMY</strong>
                 </h1>
                 <p>
-                    O motor de tradução da linguagem Ambar.Code, projetado em C++ para garantir desempenho, 
-                    portabilidade e baixo consumo energético. Uma base poderosa para programar com propósito.
+                    Uma plataforma que democratiza o ensino de programação, com aulas e materiais 
+                    acessíveis. Aprenda a programar com foco em eficiência, inclusão e impacto social.
                 </p>
                 </div>
             </div>
@@ -81,8 +81,8 @@ export function ScrollContainer({id} : {id: string}) {
                       AMBAR<strong>C</strong>
                   </h1>
                   <p>
-                      Ambar.Code é uma linguagem de programação criada para ser eficiente, acessível e ecologicamente consciente. 
-                      Simples de aprender, poderosa de executar – leve a programação aonde nunca chegou.
+                      O motor de tradução da linguagem Ambar.Code, projetado em C++ para garantir desempenho, 
+                      portabilidade e baixo consumo energético. Uma base poderosa para programar com propósito.
                   </p>
                 </div>
             </div>

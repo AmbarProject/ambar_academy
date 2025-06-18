@@ -61,7 +61,7 @@
     border-radius: 10px;
 }
 .imageAmbarcode {
-    background-image: url("/AmbarAcademyDark.svg");
+    background-image: url("");
     background-size: cover;
     background-position: center;
 }
@@ -73,7 +73,7 @@
 }
 
 .imageAcademy {
-    background-image: url("/logaName.svg");
+    background-image: url("/img/AmbarAcademyDark.svg");
     background-size: cover;
     background-position: center;
 }

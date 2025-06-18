@@ -16,10 +16,6 @@ export function Footer() {
                     <img src={"./logoAmbarCode.svg"} alt="" />
                 </div>
                 <div className="footerSocialLinks">
-                    <Link target="_blank" href={"/"} className="footerSocialLinks__link">
-                        <p>Discord Community</p>
-                        <FontAwesomeIcon icon={faDiscord} className="icon"/>
-                    </Link>
 
                     <Link target="_blank" href={"https://github.com/Ambar-Project"} className="footerSocialLinks__link">
                         <p>GitHub</p>
@@ -29,11 +25,6 @@ export function Footer() {
                     <Link target="_blank" href={"https://www.linkedin.com/company/projetoambar/about/"} className="footerSocialLinks__link">
                         <p>Linkedin</p>
                         <FontAwesomeIcon icon={faLinkedin} className="icon"/>
-                    </Link>
-
-                    <Link href={"/"} className="footerSocialLinks__link">
-                        <p>Instagram</p>
-                        <FontAwesomeIcon icon={faInstagram} className="icon"/>
                     </Link>
                 </div>
                 <div className="footerButtons">

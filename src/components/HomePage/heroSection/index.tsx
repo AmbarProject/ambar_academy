@@ -49,8 +49,10 @@ export function HeroSection({id}: {id: string}) {
                 </div>
                 <div className="heroSectionDescription">
                     <div className="actionButtons">
-                        <Link href={"/"} ><button>Baixar</button></Link>
+                        <Link href={"#pitch"} ><button>Ver Mais</button></Link>
+                        {/*
                         <Link href={"/"} ><button>Documentação</button></Link>
+                        */}
                     </div>
                     <div className="madeBy">
                         <p>Feito Por</p>

@@ -2,7 +2,7 @@ import "./PitchSection.css";
 
 export function PitchSection({id}: {id: string}) {
     return(
-        <div id={id} className="pitchSection">
+        <div id="pitch" className="pitchSection">
             <div className="pitchVideo">
                 <iframe 
                 width="100%" 

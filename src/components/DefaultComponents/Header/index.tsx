@@ -45,19 +45,20 @@ const scrollToSection = (id: string) => {
             <li className="link_item"onClick={() => scrollToSection("home")}>Home</li>
             <li className="link_item" onClick={() => scrollToSection("pitch")}>Pitch</li>
             <li className="link_item" onClick={() => scrollToSection("ecossistema")}>Ecossistema</li>
-            <li className="link_item" onClick={() => scrollToSection("dashboard")}>Dashboard</li>
             <li className="link_item" onClick={() => scrollToSection("suporte")}>Suporte</li>
           </ul>
         </div>
-
+        
         <div className="header_right">
+          
+          {/*
           <div className="header_search">
             <input type="text" placeholder="Procurar na Documentação" />
           </div>
           <button className="atalho_btn">
             CTR <br /> + <br /> K
           </button>
-
+          
           <div className="dropdown">
             <ul className="dropdown-menu">
               <li>
@@ -65,7 +66,9 @@ const scrollToSection = (id: string) => {
               </li>
             </ul>
           </div>
+          */}
         </div>
+        
       </nav>
     </header>
   );
