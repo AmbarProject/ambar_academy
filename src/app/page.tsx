@@ -36,10 +36,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div className="home">
-      <HeroSection id="home"/>
-      <PitchSection id="pitch"/>
-      <ScrollContainer id="ecossistema"/>
-      <SupportSection id="suporte"/>
+      <HeroSection />
+      <PitchSection />
+      <ScrollContainer />
+      <SupportSection />
     </div>
   );
 }
