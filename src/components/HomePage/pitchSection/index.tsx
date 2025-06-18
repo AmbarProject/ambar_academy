@@ -1,6 +1,6 @@
 import "./PitchSection.css";
 
-export function PitchSection({id}: {id: string}) {
+export function PitchSection() {
     return(
         <div id="pitch" className="pitchSection">
             <div className="pitchVideo">
