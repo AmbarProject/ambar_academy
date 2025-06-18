@@ -126,3 +126,28 @@
 .copyrightAcept:hover{
     color: #CE7B1D;
 }
+@media (max-width: 768px) {
+    .footer{
+        padding: 0px 10px;
+    }
+    .footerButtons{
+       width: 100%;
+    }
+    .footerButtons__link{
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+    }
+    .footerSocialLinks{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footerSocialLinks__link{
+        width: fit-content;
+    }
+    .copyright{
+        width: 100%;
+        padding: 0rem 0rem;
+        font-size: 0.8rem;
+    }
+}
