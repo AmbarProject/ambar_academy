@@ -96,3 +96,35 @@
     background-color: #292929;
     padding: 20px;
 }
+@media (max-width: 500px) {
+    .supportContainer{
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+    .supportSection{
+        grid-template-areas: 
+        "leftColumn"
+        "centerColumn"
+        "rightColumn";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+    }
+    .titleSection{
+        h1{
+            font-size: 2rem;
+        }
+        p{
+            width: 80%;
+            font-size: 0.9rem;
+        }
+    }
+    .centerColumn, .leftColumn, .rightColumn{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .centerColumn{
+        
+    }
+}
