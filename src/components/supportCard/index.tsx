@@ -7,13 +7,11 @@ type SupportCardProps = {
     icone: IconProp;
     title: string;
     text: string;
-    link: string;
-    btnText: string;
 }
 
 
 
-export default function SupportCard({ icone, title, text, link, btnText }: SupportCardProps) {
+export default function SupportCard({ icone, title, text}: SupportCardProps) {
     return(
         <div className="backBlock card">
             <div className="iconField">
@@ -23,14 +21,6 @@ export default function SupportCard({ icone, title, text, link, btnText }: Suppo
                 <h1>{title}</h1>
                 <p>{text}</p>
             </div>
-            <Link href={link} className="cardLink">
-                <button className="learn-more">
-                <span className="circle" aria-hidden="true">
-                    <span className="icon arrow"></span>
-                </span>
-                <span className="button-text">{btnText}</span>
-                </button>
-            </Link>
         </div>
     )
 }
