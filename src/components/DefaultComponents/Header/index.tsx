@@ -25,11 +25,6 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-
-const scrollToSection = (id: string) => {
-  const section = document.getElementById(id);
-  section?.scrollIntoView({ behavior: "smooth" });
-};
   return (
     <header className={`header ${showHeader ? "visible" : "hidden"}`}>
       <nav className="navigation">
@@ -43,10 +38,10 @@ const scrollToSection = (id: string) => {
 
         <div className="header_main">
           <ul>
-            <Link href={"#home"} className="link_item"onClick={() => scrollToSection("home")}>Home</Link>
-            <Link href={"#pitch"} className="link_item" onClick={() => scrollToSection("pitch")}>Pitch</Link>
-            <Link href={"#ecossistema"} className="link_item" onClick={() => scrollToSection("ecossistema")}>Ecossistema</Link>
-            <Link href={"#suporte"} className="link_item" onClick={() => scrollToSection("suporte")}>Suporte</Link>
+            <Link href={"#home"} className="link_item">Home</Link>
+            <Link href={"#pitch"} className="link_item">Pitch</Link>
+            <Link href={"#ecossistema"} className="link_item">Ecossistema</Link>
+            <Link href={"#suporte"} className="link_item">Suporte</Link>
           </ul>
         </div>
         
