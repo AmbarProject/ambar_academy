@@ -61,7 +61,7 @@
     border-radius: 10px;
 }
 .imageAmbarcode {
-    background-image: url("");
+    background-image: url("/img/AmbarCodeCodigo.png");
     background-size: cover;
     background-position: center;
 }
