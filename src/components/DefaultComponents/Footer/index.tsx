@@ -17,7 +17,7 @@ export function Footer() {
                 </div>
                 <div className="footerSocialLinks">
 
-                    <Link target="_blank" href={"https://github.com/Ambar-Project"} className="footerSocialLinks__link">
+                    <Link target="_blank" href={"https://github.com/AmbarProject"} className="footerSocialLinks__link">
                         <p>GitHub</p>
                         <FontAwesomeIcon icon={faGithub} className="icon"/>
                     </Link>
