@@ -4,6 +4,7 @@ import { Metadata } from "next";
 import { PitchSection } from "@/components/HomePage/pitchSection";
 import { ScrollContainer } from "@/components/HomePage/scrollContainer";
 import { SupportSection } from "@/components/HomePage/supportSection";
+import { Stats } from "@/components/HomePage/stats";
 
 export const metadata: Metadata = {
   title: "Home - Ambar",
@@ -37,6 +38,7 @@ export default function Home() {
   return (
     <div className="home">
       <HeroSection />
+      <Stats/>
       <PitchSection />
       <ScrollContainer />
       <SupportSection />
