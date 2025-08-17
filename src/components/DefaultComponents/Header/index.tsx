@@ -3,6 +3,7 @@ import React from "react";
 import "./header.css";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Header() {
   const [showHeader, setShowHeader] = useState(true);
@@ -30,10 +31,10 @@ export function Header() {
       <nav className="navigation">
         <div className="header_left">
           <div className="header_logo"></div>
-          <div className="logo_interprise"></div>
-          <div className="header_btn">
-            <button>Baixar</button>
+          <div className="logo_interprise">
+            <Image alt="logo" width={20} height={20} src="/icon/logoName.svg"></Image>
           </div>
+          
         </div>
 
         <div className="header_main">
@@ -47,7 +48,9 @@ export function Header() {
         </div>
         
         <div className="header_right">
-          
+          <div className="header_btn">
+            <Link className="buttons" target="_blank" href={"https://documentation-ambar-code.vercel.app/"}>Documentação</Link>
+          </div>
           {/*
           <div className="header_search">
             <input type="text" placeholder="Procurar na Documentação" />
