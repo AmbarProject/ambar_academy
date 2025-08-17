@@ -38,10 +38,11 @@ export function Header() {
 
         <div className="header_main">
           <ul>
-            <li className="link_item"><Link href="#home">Home</Link></li>
-            <li className="link_item"><Link href="#pitch">Pitch</Link></li>
-            <li className="link_item"><Link href="#ecossistema">Ecossistema</Link></li>
-            <li className="link_item"><Link href="#suporte">Suporte</Link></li>
+            <Link href="#home"className="link_item">Home</Link>
+            <Link href="#pitch"className="link_item">Pitch</Link>
+            <Link href="#ecossistema"className="link_item">Ecossistema</Link>
+            <Link href="#feature" className="link_item">Features</Link>
+            <Link href="#suporte" className="link_item">Suporte</Link>
           </ul>
         </div>
         

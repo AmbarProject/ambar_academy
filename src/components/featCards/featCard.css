@@ -1,0 +1,61 @@
+.features {
+  padding: 5rem 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(45deg, #ffffff, #FFB86C);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.feature-card {
+  position: relative; /* necessário pro ::before funcionar */
+  border-radius: 20px;
+  text-align: start;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-img {
+  min-width: 200px;
+  min-height: 300px;
+  margin: 0 auto 1.5rem auto;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: start;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: "Audiowide", sans-serif;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.featContainer {
+  width: 100%;
+  padding: 0px 2rem;
+}

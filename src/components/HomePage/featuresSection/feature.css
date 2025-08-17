@@ -1,0 +1,17 @@
+.features {
+  padding: 5rem 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.featContainer h2 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 4rem;
+  color: #ff8400;
+}
+
+.featContainer {
+  width: 100%;
+  padding: 0px 2rem;
+}

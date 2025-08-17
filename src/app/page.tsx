@@ -5,6 +5,7 @@ import { PitchSection } from "@/components/HomePage/pitchSection";
 import { ScrollContainer } from "@/components/HomePage/scrollContainer";
 import { SupportSection } from "@/components/HomePage/supportSection";
 import { Stats } from "@/components/HomePage/stats";
+import FeaturesSection from "@/components/HomePage/featuresSection";
 
 export const metadata: Metadata = {
   title: "Home - Ambar",
@@ -41,6 +42,7 @@ export default function Home() {
       <Stats/>
       <PitchSection />
       <ScrollContainer />
+      <FeaturesSection/>
       <SupportSection />
     </div>
   );
