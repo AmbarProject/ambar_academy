@@ -3,8 +3,9 @@ import Link from "next/link";
 import "./footer.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import { faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 config.autoAddCss = false;
 
@@ -13,7 +14,7 @@ export function Footer() {
         <footer className="footer">
             <div className="footer__content">
                 <div className="footer__content__logo">
-                    <img src={"./logoAmbarCode.svg"} alt="" />
+                    <Image width={150} height={150} alt="logo" src={"/icon/logoAmbarCode.svg"} ></Image>
                 </div>
                 <div className="footerSocialLinks">
 
@@ -21,10 +22,15 @@ export function Footer() {
                         <p>GitHub</p>
                         <FontAwesomeIcon icon={faGithub} className="icon"/>
                     </Link>
-
+                    <span className="bulletLink"></span>
                     <Link target="_blank" href={"https://www.linkedin.com/company/projetoambar/about/"} className="footerSocialLinks__link">
                         <p>Linkedin</p>
                         <FontAwesomeIcon icon={faLinkedin} className="icon"/>
+                    </Link>
+                    <span className="bulletLink"></span>
+                    <Link target="_blank" href={"https://www.youtube.com/channel/UCtXbRez_ADz5MXOe3N5U0rA"} className="footerSocialLinks__link">
+                        <p>Youtube</p>
+                        <FontAwesomeIcon icon={faYoutube} className="icon"/>
                     </Link>
                 </div>
                 <div className="footerButtons">
