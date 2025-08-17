@@ -31,7 +31,7 @@ export function Footer() {
                     <Link href={"/"} className="footerButtons__link">
                         <button className="footerButtons__link__button">Começar Agora</button>
                     </Link>
-                    <Link href={"/"} className="footerButtons__link">
+                    <Link href={"https://documentation-ambar-code.vercel.app/"} className="footerButtons__link">
                         <button className="footerButtons__link__button">Documentação</button>
                     </Link>
                 </div>
