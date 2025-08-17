@@ -7,31 +7,33 @@ export default function FeaturesSection() {
       <div className="featContainer">
                 <h2>Por que Escolher a Ambar?</h2>
                 <div className="features-grid">
-                    <FeatCards 
+                    <FeatCards
+                        descImg="Gráfico de desempenho com barras crescentes e seta ascendente" 
                         backImg="/img/DesempenhoAmbar.svg"
                         featTitle="Alto desempenho "
                         featText="Compilador, oferecendo performance comparável a linguagens de 
-                        baixo nível, mas com a produtividade de linguagens modernas. 
-                        O melhor dos dois mundos."
+                        baixo nível, mas com a produtividade de linguagens modernas."
                     />
-                    <FeatCards 
+                    <FeatCards
+                        descImg="Símbolo de reciclagem com código de programação ao centro" 
                         backImg="/img/EcológicoAmbar.svg"
                         featTitle="Consciência Ecológica"
-                        featText="Projeto open-source desenvolvido por estudantes brasileiros, 
-                            alinhado com as demandas climáticas globais."
+                        featText="Otimizações energéticas integradas. Cada linha de código é 
+                        analisada para maximizar eficiência e minimizar impacto ambiental."
                     />
-                    <FeatCards 
+                    <FeatCards
+                        descImg="Logo AMBAR.CODE com globo terrestre e conexões globais" 
                         backImg="/img/GlobalAmbar.svg"
                         featTitle="Impacto Global"
-                        featText="Otimizações energéticas integradas. Cada linha de código é 
-                            analisada para maximizar eficiência e minimizar impacto ambiental."
+                        featText="Projeto open-source desenvolvido por estudantes brasileiros, 
+                        alinhado com as demandas climáticas globais"
                     />
-                    <FeatCards 
+                    <FeatCards
+                        descImg="opa" 
                         backImg="/img/DesempenhoAmbar.svg"
-                        featTitle="Sustentabilidade Digital"
+                        featTitle="Alto desempenho "
                         featText="Compilador, oferecendo performance comparável a linguagens de 
-                        baixo nível, mas com a produtividade de linguagens modernas. 
-                        O melhor dos dois mundos."
+                        baixo nível, mas com a produtividade de linguagens modernas."
                     />
                 </div>
             </div>
