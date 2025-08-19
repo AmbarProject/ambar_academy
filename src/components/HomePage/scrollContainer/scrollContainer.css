@@ -154,4 +154,7 @@
     .scrollContent_text{
         padding: 3rem 0rem 0rem 0rem;
     }
+    .scrollContent_text h1{
+        font-size: 1.3rem;
+    }
 }

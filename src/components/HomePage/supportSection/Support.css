@@ -109,11 +109,12 @@
         "rightColumn";
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        width: 90%;
+        width: 85%;
     }
     .titleSection{
         h1{
             font-size: 2rem;
+            text-align: center;
         }
         p{
             width: 80%;
@@ -123,8 +124,5 @@
     .centerColumn, .leftColumn, .rightColumn{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-    }
-    .centerColumn{
-        
     }
 }

@@ -17,3 +17,9 @@
     width: 95%;
   }
 }
+@media screen and (max-width: 431px) {
+  .featContainer {
+    width: 95%;
+    align-items: center;
+  }
+}

@@ -57,3 +57,10 @@
     gap: 2rem;
   }
 }
+@media screen and (max-width: 431px) {
+  .features-grid {
+    width: 90%;
+    gap: 3rem;
+    justify-items: center;
+  }
+}
