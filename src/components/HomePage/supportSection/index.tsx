@@ -7,6 +7,22 @@ import {
 import SupportCard from "@/components/supportCard";
 
 export function SupportSection() {
+  const supportCards = [{
+    icone: faBrain,
+    title: "EXPERIMENTE A LINGUAGEM AMBAR.CODE",
+    text: "Domine uma linguagem criada para ensinar de forma intuitiva e com foco em sustentabilidade. Com sintaxe clara, tipagem estática e feedback em tempo real sobre eficiência, você programa com consciência ecológica desde o primeiro dia. Perfeita para estudantes, entusiastas e profissionais que querem unir tecnologia e responsabilidade ambiental."
+  },
+  {
+    icone: faGear,
+    title: "ENTENDA COMO FUNCIONA O COMPILADOR",
+    text: "compilador que traduz sua lógica em código altamente otimizado. Ele analisa, transforma e melhora seu programa usando IA e heurísticas energéticas, identificando trechos ineficientes e reescrevendo-os de forma mais leve. Tudo isso com base na infraestrutura LLVM e otimizações como eliminação de código morto, inlining e loop fusion."
+  },
+  {
+    icone: faEarth,
+    title: "PROGRAME PENSANDO NO FUTURO",
+    text: "Cada linha de código escrita em Ambar.Code representa menos emissões de CO₂. Com a proposta de redução de até 15% no consumo energético, o projeto contribui diretamente com os Objetivos do Desenvolvimento Sustentável (ODS). Seja parte da mudança: programe com impacto positivo no planeta e nas futuras gerações."
+  }]
+
   return (
     <div id="suporte" className="supportContainer">
       <div className="titleSection">
@@ -27,38 +43,11 @@ export function SupportSection() {
           <div className="backBlock"></div>
           <div className="backBlock"></div>
 
-  
+          {supportCards.map((item, index) => (
             <SupportCard
-              icone={faBrain}
-              title="EXPERIMENTE A LINGUAGEM AMBAR.CODE"
-              text="Domine uma linguagem criada para ensinar de forma 
-              intuitiva e com foco em sustentabilidade. Com sintaxe clara, 
-              tipagem estática e feedback em tempo real sobre eficiência, 
-              você programa com consciência ecológica desde o primeiro dia.
-              Perfeita para estudantes, entusiastas e profissionais que querem unir tecnologia e responsabilidade ambiental."
+              key={index}{...item}
             />
-
-            <SupportCard
-              icone={faGear}
-              title="ENTENDA COMO FUNCIONA O COMPILADOR"
-              text="compilador que traduz sua lógica em código altamente 
-              otimizado. Ele analisa, transforma e melhora seu programa usando 
-              IA e heurísticas energéticas, identificando trechos ineficientes 
-              e reescrevendo-os de forma mais leve.
-              Tudo isso com base na infraestrutura LLVM e otimizações como 
-              eliminação de código morto, inlining e loop fusion."
-            />
-
-            <SupportCard 
-              icone={faEarth}
-              title={"PROGRAME PENSANDO NO FUTURO"}
-              text="Cada linha de código escrita em Ambar.Code representa 
-              menos emissões de CO₂. Com a proposta de redução de até 15% no 
-              consumo energético, o projeto contribui diretamente com os Objetivos 
-              do Desenvolvimento Sustentável (ODS).
-              Seja parte da mudança: programe com impacto positivo no planeta 
-              e nas futuras gerações."
-            />
+          ))}
            
           <div className="backBlock"></div>
           <div className="backBlock"></div>

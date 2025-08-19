@@ -141,3 +141,21 @@ button:hover .circle .icon.arrow {
 button:hover .button-text {
   color: #fff;
 }
+
+@media screen and (max-width: 1300px) {
+  .textField {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Audiowide", sans-serif;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 1rem;
+  }
+}
+}
