@@ -87,7 +87,7 @@
         }
 
 .header_main{
-    display: flex;
+ display: flex;
     width: 100%;
     border: 2px solid #333;
     border-radius: 5px;
@@ -166,3 +166,110 @@
     gap: 2px;
     display: flex;
 }
+
+/* ...existing code... */
+
+/* Hamburguer Button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 11000;
+  margin-left: 1rem;
+}
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  margin: 4px 0;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .logo_interprise{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 70% 100%;
+        }
+        .logo_interprise img{
+            width: 60%;
+        }
+  .header {
+    padding: 15px 10px;
+  }
+  .header_left{
+
+  }
+   .header_right {
+    flex: none;
+  }
+  .header_main {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    background: #000000;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0);
+    z-index: 10999;
+    transition: all 0.3s;
+    border-color: #000;
+  }
+  .header_main.show {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  .header_main ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+  .header_main .link_item {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    background: none;
+    color: #fff;
+    transition: background 0.2s, color 0.2s;
+  }
+  .header_main .link_item:hover {
+    background: #CE7B1D;
+    color: #fff;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .header_right {
+    display: none;
+  }
+}
+
+/* ...existing code... */

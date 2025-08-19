@@ -1,27 +1,24 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./header.css";
-import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export function Header() {
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-
       if (currentScrollY > lastScrollY) {
         setShowHeader(false);
-      } else { 
-        setShowHeader(true); 
+      } else {
+        setShowHeader(true);
       }
-
       setLastScrollY(currentScrollY);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
@@ -32,43 +29,36 @@ export function Header() {
         <div className="header_left">
           <div className="header_logo"></div>
           <div className="logo_interprise">
-            <Image alt="logo" width={20} height={20} src="/icon/logoName.svg"></Image>
+            <Image alt="logo" width={20} height={20} src="/icon/logoName.svg" />
           </div>
-          
         </div>
 
-        <div className="header_main">
+        {/* Menu Hamburguer */}
+        <button
+          className={`hamburger ${menuOpen ? "open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Abrir menu"
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        <div className={`header_main ${menuOpen ? "show" : ""}`}>
           <ul>
-            <Link href="#home"className="link_item">Home</Link>
-            <Link href="#pitch"className="link_item">Pitch</Link>
-            <Link href="#ecossistema"className="link_item">Ecossistema</Link>
-            <Link href="#feature" className="link_item">Features</Link>
-            <Link href="#suporte" className="link_item">Suporte</Link>
+            <Link href="#home" className="link_item" onClick={() => setMenuOpen(false)}>Home</Link>
+            <Link href="#pitch" className="link_item" onClick={() => setMenuOpen(false)}>Pitch</Link>
+            <Link href="#ecossistema" className="link_item" onClick={() => setMenuOpen(false)}>Ecossistema</Link>
+            <Link href="#feature" className="link_item" onClick={() => setMenuOpen(false)}>Features</Link>
+            <Link href="#suporte" className="link_item" onClick={() => setMenuOpen(false)}>Comunidade</Link>
           </ul>
         </div>
-        
+
         <div className="header_right">
           <div className="header_btn">
             <Link className="buttons" target="_blank" href={"https://documentation-ambar-code.vercel.app/"}>Documentação</Link>
           </div>
-          {/*
-          <div className="header_search">
-            <input type="text" placeholder="Procurar na Documentação" />
-          </div>
-          <button className="atalho_btn">
-            CTR <br /> + <br /> K
-          </button>
-          
-          <div className="dropdown">
-            <ul className="dropdown-menu">
-              <li>
-                <img src={"./icon/bandeira.svg"} alt="Bandeira do Brasil" /> BR
-              </li>
-            </ul>
-          </div>
-          */}
         </div>
-        
       </nav>
     </header>
   );

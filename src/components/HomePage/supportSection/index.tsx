@@ -10,10 +10,9 @@ export function SupportSection() {
   return (
     <div id="suporte" className="supportContainer">
       <div className="titleSection">
-        <h1>Nosso Suporte</h1>
+        <h1>Comunidade Ambar.Code</h1>
         <p>
-          Nosso time esta aqui pra ajudar, Junte se a nossa comunidade, porocure
-          na nossa documentação ou simplesmente nos diga o que voce precisa
+          Participe do ecossistema e descubra tudo o que o Ambar.Code pode oferecer.
         </p>
       </div>
       <div className="supportSection">

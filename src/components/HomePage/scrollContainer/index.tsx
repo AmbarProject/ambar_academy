@@ -55,12 +55,12 @@ export function ScrollContainer() {
             <div className="scrollContainer__content">
                 <div className="scrollContainer__content__img">
                   <div className="imageContent imageAcademy">
-                      <span className="badge">ACADEMY</span>
+                      <span className="badge">DOCUMENTATION</span>
                   </div>
                 </div>
                 <div className="scrollContent_text">
                 <h1>
-                    AMBAR.<strong>ACADEMY</strong>
+                    AMBAR.<strong>DOCUMENTATION</strong>
                 </h1>
                 <p>
                     Uma plataforma que democratiza o ensino de programação, com aulas e materiais 

@@ -29,11 +29,12 @@ export default function FeaturesSection() {
                         alinhado com as demandas climáticas globais"
                     />
                     <FeatCards
-                        descImg="opa" 
+                        descImg="aprendizado" 
                         backImg="/img/DesempenhoAmbar.svg"
-                        featTitle="Alto desempenho "
-                        featText="Compilador, oferecendo performance comparável a linguagens de 
-                        baixo nível, mas com a produtividade de linguagens modernas."
+                        featTitle="Aprendizado Intuitivo"
+                        featText="Ambar.Code foi criada para ser acessível desde o primeiro 
+                        contato. Sua baixa curva de aprendizado permite que iniciantes dominem 
+                        conceitos rapidamente."
                     />
                 </div>
             </div>
