@@ -67,7 +67,7 @@
 }
 
 .imageAmbarc {
-    background-image: url("/bandeira.svg");
+    background-image: url("/img/ambarc.png");
     background-size: cover;
     background-position: center;
 }
